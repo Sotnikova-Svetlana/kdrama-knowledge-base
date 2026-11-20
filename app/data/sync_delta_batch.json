@@ -1,0 +1,526 @@
+{
+  "batch_name": "K-Drama Autonomous Sync Delta Batch #2026-Q4",
+  "genres": [],
+  "platforms": [
+    {
+      "slug": "coupang-play",
+      "name": "Coupang Play",
+      "country": "KR",
+      "platform_type": "OTT"
+    }
+  ],
+  "tropes": [],
+  "persons": [
+    {
+      "slug": "park-bo-gum",
+      "name_ru": "Пак Бо Гом",
+      "name_en": "Park Bo-gum",
+      "name_kr": "박보검",
+      "primary_profession": "Actor",
+      "birth_year": 1993,
+      "bio_short": "Актёр («Когда жизнь даёт тебе мандарины», «Ответ 1988», «Свет луны, очерченный облаком»).",
+      "photo_url": "https://static.tvmaze.com/uploads/images/medium_portrait/81/203992.jpg"
+    },
+    {
+      "slug": "kim-nam-gil",
+      "name_ru": "Ким Нам Гиль",
+      "name_en": "Kim Nam-gil",
+      "name_kr": "김남길",
+      "primary_profession": "Actor",
+      "birth_year": 1980,
+      "bio_short": "Актёр («Вспыльчивый священник», «Те, кто читают сердца зла»).",
+      "photo_url": "https://static.tvmaze.com/uploads/images/medium_portrait/460/1150660.jpg"
+    },
+    {
+      "slug": "iu",
+      "name_ru": "АйЮ",
+      "name_en": "IU",
+      "name_kr": "",
+      "primary_profession": "Actor",
+      "birth_year": 1993,
+      "bio_short": "Корейский актёр (Когда жизнь даёт тебе мандарины).",
+      "photo_url": "https://static.tvmaze.com/uploads/images/medium_portrait/207/519827.jpg"
+    },
+    {
+      "slug": "moon-so-ri",
+      "name_ru": "Мун Со Ри",
+      "name_en": "Moon So Ri",
+      "name_kr": "",
+      "primary_profession": "Actor",
+      "birth_year": 1974,
+      "bio_short": "Корейский актёр (Когда жизнь даёт тебе мандарины).",
+      "photo_url": "https://static.tvmaze.com/uploads/images/medium_portrait/562/1405042.jpg"
+    },
+    {
+      "slug": "park-hae-joon",
+      "name_ru": "Пак Хэ Джун",
+      "name_en": "Park Hae Joon",
+      "name_kr": "",
+      "primary_profession": "Actor",
+      "birth_year": 1976,
+      "bio_short": "Корейский актёр (Когда жизнь даёт тебе мандарины).",
+      "photo_url": "https://static.tvmaze.com/uploads/images/medium_portrait/242/606955.jpg"
+    },
+    {
+      "slug": "ryu-seung-ryong",
+      "name_ru": "Рю Сын Рён",
+      "name_en": "Ryu Seung Ryong",
+      "name_kr": "",
+      "primary_profession": "Actor",
+      "birth_year": 1970,
+      "bio_short": "Корейский актёр (Перемещение).",
+      "photo_url": "https://static.tvmaze.com/uploads/images/medium_portrait/86/217332.jpg"
+    },
+    {
+      "slug": "han-hyo-joo",
+      "name_ru": "Хан Хё Джу",
+      "name_en": "Han Hyo Joo",
+      "name_kr": "",
+      "primary_profession": "Actor",
+      "birth_year": 1987,
+      "bio_short": "Корейский актёр (Перемещение).",
+      "photo_url": "https://static.tvmaze.com/uploads/images/medium_portrait/40/100558.jpg"
+    },
+    {
+      "slug": "jo-in-sung",
+      "name_ru": "Чо Ин Сон",
+      "name_en": "Jo In Sung",
+      "name_kr": "",
+      "primary_profession": "Actor",
+      "birth_year": 1981,
+      "bio_short": "Корейский актёр (Перемещение).",
+      "photo_url": "https://static.tvmaze.com/uploads/images/medium_portrait/14/37472.jpg"
+    },
+    {
+      "slug": "cha-tae-hyeon",
+      "name_ru": "Ча Тхэ Хён",
+      "name_en": "Cha Tae Hyeon",
+      "name_kr": "",
+      "primary_profession": "Actor",
+      "birth_year": 1976,
+      "bio_short": "Корейский актёр (Перемещение).",
+      "photo_url": "https://static.tvmaze.com/uploads/images/medium_portrait/242/606913.jpg"
+    },
+    {
+      "slug": "ryoo-seung-bum",
+      "name_ru": "Рёо Сын Бом",
+      "name_en": "Ryoo Seung Bum",
+      "name_kr": "",
+      "primary_profession": "Actor",
+      "birth_year": 1980,
+      "bio_short": "Корейский актёр (Перемещение).",
+      "photo_url": "https://static.tvmaze.com/uploads/images/medium_portrait/422/1055462.jpg"
+    },
+    {
+      "slug": "kim-sung-kyun",
+      "name_ru": "Ким Сон Гюн",
+      "name_en": "Kim Sung Kyun",
+      "name_kr": "",
+      "primary_profession": "Actor",
+      "birth_year": 1980,
+      "bio_short": "Корейский актёр (Перемещение).",
+      "photo_url": "https://static.tvmaze.com/uploads/images/medium_portrait/573/1432738.jpg"
+    },
+    {
+      "slug": "kim-hee-won",
+      "name_ru": "Ким Хи Вон",
+      "name_en": "Kim Hee Won",
+      "name_kr": "",
+      "primary_profession": "Actor",
+      "birth_year": 1971,
+      "bio_short": "Корейский актёр (Перемещение).",
+      "photo_url": "https://static.tvmaze.com/uploads/images/medium_portrait/82/206263.jpg"
+    },
+    {
+      "slug": "moon-sung-geun",
+      "name_ru": "Мун Сон Гын",
+      "name_en": "Moon Sung Geun",
+      "name_kr": "",
+      "primary_profession": "Actor",
+      "birth_year": 1953,
+      "bio_short": "Корейский актёр (Перемещение).",
+      "photo_url": "https://static.tvmaze.com/uploads/images/medium_portrait/119/298705.jpg"
+    },
+    {
+      "slug": "seo-in-gook",
+      "name_ru": "Со Ин Гук",
+      "name_en": "Seo In Gook",
+      "name_kr": "",
+      "primary_profession": "Actor",
+      "birth_year": 1987,
+      "bio_short": "Корейский актёр (И Джэ, скоро умрёшь).",
+      "photo_url": "https://static.tvmaze.com/uploads/images/medium_portrait/16/41330.jpg"
+    },
+    {
+      "slug": "park-so-dam",
+      "name_ru": "Пак Со Дам",
+      "name_en": "Park So Dam",
+      "name_kr": "",
+      "primary_profession": "Actor",
+      "birth_year": 1991,
+      "bio_short": "Корейский актёр (И Джэ, скоро умрёшь).",
+      "photo_url": "https://static.tvmaze.com/uploads/images/medium_portrait/64/160015.jpg"
+    },
+    {
+      "slug": "jin-sun-kyu",
+      "name_ru": "Джин Сун Кю",
+      "name_en": "Jin Sun Kyu",
+      "name_kr": "",
+      "primary_profession": "Actor",
+      "birth_year": 1977,
+      "bio_short": "Корейский актёр (Те, кто читают сердца зла).",
+      "photo_url": "https://static.tvmaze.com/uploads/images/medium_portrait/649/1622946.jpg"
+    },
+    {
+      "slug": "kim-so-jin",
+      "name_ru": "Ким Со Джин",
+      "name_en": "Kim So Jin",
+      "name_kr": "",
+      "primary_profession": "Actor",
+      "birth_year": 1979,
+      "bio_short": "Корейский актёр (Те, кто читают сердца зла).",
+      "photo_url": "https://static.tvmaze.com/uploads/images/medium_portrait/384/962374.jpg"
+    },
+    {
+      "slug": "ryeo-un",
+      "name_ru": "Рё Ун",
+      "name_en": "Ryeo Un",
+      "name_kr": "",
+      "primary_profession": "Actor",
+      "birth_year": 1998,
+      "bio_short": "Корейский актёр (Те, кто читают сердца зла).",
+      "photo_url": "https://static.tvmaze.com/uploads/images/medium_portrait/260/651656.jpg"
+    }
+  ],
+  "dramas": [
+      
+    {
+      "tmdb_id": 219246,
+      "slug": "when-life-gives-you-tangerines",
+      "title_ru": "Когда жизнь даёт тебе мандарины",
+      "title_en": "When Life Gives You Tangerines",
+      "title_kr": "폭싹 속았수다",
+      "title_romaja": "Pokssak Sogatsuda",
+      "synopsis_ru": "Трогательная история взросления бунтарки Э Сун и преданного Кван Шика на живописном острове Чеджу, преодолевающая испытания бедностью, утратами и сменой поколений.",
+      "release_year": 2025,
+      "first_air_date": "2025-03-07",
+      "episodes_count": 16,
+      "episode_runtime": 62,
+      "status": "Completed",
+      "rating": 9.3,
+      "votes_count": 18400,
+      "popularity_score": 96.5,
+      "poster_url": "https://static.tvmaze.com/uploads/images/medium_portrait/553/1383936.jpg",
+      "age_rating": "12+",
+      "genres": [
+        "drama",
+        "romance",
+        "slice-of-life"
+      ],
+      "platforms": [
+        "netflix"
+      ],
+      "tropes": [],
+      "cast": [
+        {
+          "person": "iu-lee-ji-eun",
+          "role_type": "Main",
+          "character_name": "О Э Сун"
+        },
+        {
+          "person": "park-bo-gum",
+          "role_type": "Main",
+          "character_name": "Ян Кван Шик"
+        },
+        {
+          "person": "kim-won-suk",
+          "role_type": "Director",
+          "character_name": ""
+        },
+        {
+          "person": "iu",
+          "role_type": "Main",
+          "character_name": "O Ae Sun",
+          "billing_order": 1
+        },
+        {
+          "person": "moon-so-ri",
+          "role_type": "Main",
+          "character_name": "O Ae Sun[Middle-age]",
+          "billing_order": 2
+        },
+        {
+          "person": "park-hae-joon",
+          "role_type": "Support",
+          "character_name": "Yang Gwan Shik[Middle-age]",
+          "billing_order": 5
+        }
+      ]
+    },
+    {
+      "tmdb_id": 209867,
+      "slug": "moving",
+      "title_ru": "Перемещение",
+      "title_en": "Moving",
+      "title_kr": "무빙",
+      "title_romaja": "Mubing",
+      "synopsis_ru": "Школьники со сверхспособностями и их родители — бывшие спецагенты со скрытой тайной личностью — объединяются, чтобы защитить семью от безжалостного наёмного убийцы и коррумпированной разведки.",
+      "release_year": 2023,
+      "first_air_date": "2023-08-09",
+      "episodes_count": 20,
+      "episode_runtime": 50,
+      "status": "Completed",
+      "rating": 8.9,
+      "votes_count": 15200,
+      "popularity_score": 92.1,
+      "poster_url": "https://static.tvmaze.com/uploads/images/medium_portrait/472/1181779.jpg",
+      "age_rating": "18+",
+      "genres": [
+        "action",
+        "scifi",
+        "thriller",
+        "drama"
+      ],
+      "platforms": [
+        "disney-plus"
+      ],
+      "tropes": [],
+      "cast": [
+        {
+          "person": "han-so-hee",
+          "role_type": "Cameo",
+          "character_name": ""
+        },
+        {
+          "person": "ryu-seung-ryong",
+          "role_type": "Main",
+          "character_name": "Jang Joo Won",
+          "billing_order": 1
+        },
+        {
+          "person": "han-hyo-joo",
+          "role_type": "Main",
+          "character_name": "Lee Mi Hyun",
+          "billing_order": 2
+        },
+        {
+          "person": "jo-in-sung",
+          "role_type": "Main",
+          "character_name": "Kim Doo Sik",
+          "billing_order": 3
+        },
+        {
+          "person": "cha-tae-hyeon",
+          "role_type": "Support",
+          "character_name": "Jeon Gye Do",
+          "billing_order": 4
+        },
+        {
+          "person": "ryoo-seung-bum",
+          "role_type": "Support",
+          "character_name": "Frank",
+          "billing_order": 5
+        },
+        {
+          "person": "kim-sung-kyun",
+          "role_type": "Support",
+          "character_name": "Lee Jae Man",
+          "billing_order": 6
+        },
+        {
+          "person": "kim-hee-won",
+          "role_type": "Support",
+          "character_name": "Choi Il Hwan",
+          "billing_order": 7
+        },
+        {
+          "person": "moon-sung-geun",
+          "role_type": "Support",
+          "character_name": "Min Yong Joon",
+          "billing_order": 8
+        }
+      ]
+    },
+    {
+      "tmdb_id": 218145,
+      "slug": "death-game",
+      "title_ru": "И Джэ, скоро умрёшь",
+      "title_en": "Death's Game",
+      "title_kr": "이재, 곧 죽습니다",
+      "title_romaja": "Ijae, Got Jukseumnida",
+      "synopsis_ru": "Доведённый до отчаяния Чхве И Джэ наказан самой Смертью: перед падением в ад он должен пережить двенадцать чужих жизней и перерождений, чтобы доказать ценность жизни и отомстить коррумпированному наследнику чеболей.",
+      "release_year": 2023,
+      "first_air_date": "2023-12-15",
+      "episodes_count": 8,
+      "episode_runtime": 55,
+      "status": "Completed",
+      "rating": 8.8,
+      "votes_count": 13900,
+      "popularity_score": 91.4,
+      "poster_url": "https://static.tvmaze.com/uploads/images/medium_portrait/484/1210675.jpg",
+      "age_rating": "18+",
+      "genres": [
+        "fantasy",
+        "thriller",
+        "drama",
+        "mystery"
+      ],
+      "platforms": [
+        "tvn",
+        "netflix"
+      ],
+      "tropes": [],
+      "cast": [
+        {
+          "person": "lee-do-hyun",
+          "role_type": "Support",
+          "character_name": "Чан Гон У"
+        },
+        {
+          "person": "seo-in-gook",
+          "role_type": "Main",
+          "character_name": "Choi Yi Jae",
+          "billing_order": 1
+        },
+        {
+          "person": "park-so-dam",
+          "role_type": "Main",
+          "character_name": "Death",
+          "billing_order": 2
+        }
+      ]
+    },
+    {
+      "tmdb_id": 157239,
+      "slug": "through-the-darkness",
+      "title_ru": "Те, кто читают сердца зла",
+      "title_en": "Through the Darkness",
+      "title_kr": "악의 마음을 읽는 자들",
+      "title_romaja": "Agui Maeumeul Ingneun Jadeul",
+      "synopsis_ru": "В конце 1990-х детектив Сон Ха Ён становится первым криминальным профайлером Южной Кореи, проводя интервью с маньяками, чтобы остановить волну расследований серийных убийц.",
+      "release_year": 2022,
+      "first_air_date": "2022-01-14",
+      "episodes_count": 12,
+      "episode_runtime": 65,
+      "status": "Completed",
+      "rating": 8.7,
+      "votes_count": 8700,
+      "popularity_score": 84.9,
+      "poster_url": "https://static.tvmaze.com/uploads/images/medium_portrait/389/972574.jpg",
+      "age_rating": "18+",
+      "genres": [
+        "crime",
+        "mystery",
+        "thriller"
+      ],
+      "platforms": [
+        "sbs",
+        "netflix"
+      ],
+      "tropes": [],
+      "cast": [
+        {
+          "person": "kim-nam-gil",
+          "role_type": "Main",
+          "character_name": "Сон Ха Ён"
+        },
+        {
+          "person": "jin-sun-kyu",
+          "role_type": "Main",
+          "character_name": "Kook Young Soo",
+          "billing_order": 2
+        },
+        {
+          "person": "kim-so-jin",
+          "role_type": "Main",
+          "character_name": "Yoon Tae Koo",
+          "billing_order": 3
+        },
+        {
+          "person": "ryeo-un",
+          "role_type": "Support",
+          "character_name": "Jung Woo Joo",
+          "billing_order": 4
+        }
+      ]
+    },
+    {
+      "tmdb_id": 200709,
+      "slug": "weak-hero-class-1-updated",
+      "title_ru": "Слабый герой",
+      "title_en": "Weak Hero Class 1",
+      "title_kr": "약한영웅 Class 1",
+      "title_romaja": "Yakhanyeongung Class 1",
+      "synopsis_ru": "Хрупкий на вид отличник Ён Ши Ын использует блестящий аналитический ум, знание физики и психологию, чтобы дать жёсткий отпор школьным хулиганам и защитить новых друзей.",
+      "release_year": 2022,
+      "first_air_date": "2022-11-18",
+      "episodes_count": 16,
+      "episode_runtime": 42,
+      "status": "Completed",
+      "rating": 9.1,
+      "votes_count": 14600,
+      "popularity_score": 91.5,
+      "poster_url": "https://static.tvmaze.com/uploads/images/medium_portrait/568/1420042.jpg",
+      "age_rating": "18+",
+      "genres": [
+        "action",
+        "drama",
+        "thriller"
+      ],
+      "platforms": [
+        "netflix"
+      ],
+      "tropes": [],
+      "cast": [
+        {
+          "person": "park-ji-hoon",
+          "role_type": "Main",
+          "character_name": "Yun Shi Eun",
+          "billing_order": 1
+        },
+        {
+          "person": "choi-hyeon-uk",
+          "role_type": "Main",
+          "character_name": "An Su Ho",
+          "billing_order": 2
+        },
+        {
+          "person": "hong-kyung",
+          "role_type": "Main",
+          "character_name": "Oh Bum Suk",
+          "billing_order": 3
+        },
+        {
+          "person": "ryeo-un",
+          "role_type": "Support",
+          "character_name": "Park Hu Min",
+          "billing_order": 4
+        },
+        {
+          "person": "choi-min-yeong",
+          "role_type": "Support",
+          "character_name": "Seo Jeon Tae",
+          "billing_order": 5
+        },
+        {
+          "person": "bae-na-ra",
+          "role_type": "Support",
+          "character_name": "Na Baek Jin",
+          "billing_order": 6
+        },
+        {
+          "person": "lee-min-jae",
+          "role_type": "Support",
+          "character_name": "Go Hyun Tak",
+          "billing_order": 7
+        },
+        {
+          "person": "lee-jun-young",
+          "role_type": "Support",
+          "character_name": "Geum Seong Je",
+          "billing_order": 8
+        }
+      ]
+    }
+  ]
+}

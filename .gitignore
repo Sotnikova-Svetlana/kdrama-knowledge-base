@@ -1,0 +1,12 @@
+venv/
+.venv/
+__pycache__/
+*.db
+*.db-wal
+*.db-shm
+data/*.db
+.env
+fix_actors.py
+clean_data.py
+.idea/
+.vscode/

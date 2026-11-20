@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Дораматека — Каталог и база знаний корейских дорам</title>
+  <meta name="description" content="Умный каталог корейских дорам с описаниями, поиском с исправлением опечаток и раскладки, подборками по годам, сюжетным тропам и персональными рекомендациями." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/css/styles.css" />
+</head>
+<body>
+  <!-- Однострочная шапка сайта дорам (3 зоны) -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="#catalog" class="brand-wordmark" data-nav="catalog">Дораматека</a>
+
+      <nav class="main-nav" aria-label="Разделы сайта">
+        <button type="button" class="nav-link is-active" data-nav-mode="all">Каталог</button>
+        <button type="button" class="nav-link" data-nav-mode="ongoing">Онгоинги</button>
+        <button type="button" class="nav-link" data-nav-mode="fresh">Новинки</button>
+        <button type="button" class="nav-link" data-nav-mode="lists">Мои списки</button>
+      </nav>
+
+      <div class="topbar-actions">
+        <button type="button" id="btn-check-updates" class="btn btn-primary">Проверить новинки</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="workspace">
+    <!-- ==================== КАТАЛОГ ДОРАМ ==================== -->
+    <section id="view-catalog" class="view-section is-active" aria-labelledby="catalog-heading">
+      <!-- Умный поиск -->
+      <div class="search-panel">
+        <div class="search-shell">
+          <form id="search-form" class="search-bar" autocomplete="off">
+            <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input
+              id="search-input"
+              type="search"
+              placeholder="Поиск дорамы, актёра или сюжета (понимает опечатки и раскладку, например: Итевон Клас, Rjhjktdf ck`p)..."
+              aria-label="Поиск по каталогу дорам"
+            />
+            <button type="button" id="btn-clear-search" class="btn-icon is-hidden" title="Очистить поиск" aria-label="Очистить поиск">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+            <button type="submit" class="btn btn-primary">Найти</button>
+          </form>
+
+          <div id="autocomplete-dropdown" class="autocomplete-dropdown is-hidden" role="listbox"></div>
+        </div>
+
+        <div class="quick-queries">
+          <span class="quick-label">Попробуйте поиск:</span>
+          <button type="button" class="quick-chip" data-query="Итевон Клас">Итевон Клас</button>
+          <button type="button" class="quick-chip" data-query="Rjhjktdf ck`p">Rjhjktdf ck`p</button>
+          <button type="button" class="quick-chip" data-query="uj,kby">uj,kby</button>
+          <button type="button" class="quick-chip" data-query="Винченцоо">Винченцоо</button>
+        </div>
+
+        <!-- Плашка исправления опечатки / раскладки -->
+        <div id="search-correction-banner" class="correction-banner is-hidden" role="status">
+          <div class="correction-text">
+            <span id="correction-message"></span>
+          </div>
+          <button type="button" id="btn-search-exact-raw" class="btn-link">Искать точное написание</button>
+        </div>
+      </div>
+
+      <!-- Прогресс-бар проверки новинок и лента недавно добавленных/обновлённых дорам -->
+      <div id="update-progress-strip" class="update-progress-strip is-hidden" role="status">
+        <div class="update-progress-row">
+          <span id="update-progress-text">Поиск новых дорам и серий...</span>
+          <span id="update-progress-pct" class="mono-num">0%</span>
+        </div>
+        <div class="progress-track">
+          <div id="update-progress-fill" class="progress-fill" style="width: 0%"></div>
+        </div>
+      </div>
+
+      <div id="updates-highlight-shelf" class="updates-shelf is-hidden">
+        <div class="updates-shelf-header">
+          <div>
+            <h2 class="updates-shelf-title">Только что обновилось в каталоге</h2>
+            <p id="updates-shelf-summary" class="updates-shelf-sub"></p>
+          </div>
+          <button type="button" id="btn-dismiss-updates-shelf" class="btn-link">Скрыть подборку</button>
+        </div>
+        <div id="updates-shelf-grid" class="updates-shelf-grid"></div>
+      </div>
+
+      <!-- Главная витрина дорам (Spotlight) -->
+      <section id="hero-spotlight" class="hero-spotlight" aria-label="Выбор редакции"></section>
+
+      <!-- Полоса фильтров и кликабельных годов -->
+      <div class="filters-section">
+        <div class="filters-toolbar">
+          <div class="segmented-tabs" id="status-tabs" role="tablist" aria-label="Статус выхода">
+            <button type="button" class="seg-tab is-active" data-status="">Все дорамы</button>
+            <button type="button" class="seg-tab" data-status="Ongoing">Идут сейчас (Онгоинги)</button>
+            <button type="button" class="seg-tab" data-status="Completed">Завершённые</button>
+          </div>
+
+          <div class="select-group">
+            <select id="filter-genre" aria-label="Жанр">
+              <option value="">Все жанры</option>
+            </select>
+            <select id="filter-trope" aria-label="Сюжетный мотив">
+              <option value="">Все сюжетные мотивы</option>
+            </select>
+            <select id="filter-platform" aria-label="Канал или платформа">
+              <option value="">Все платформы</option>
+            </select>
+            <select id="filter-sort" aria-label="Сортировка">
+              <option value="rating">По рейтингу</option>
+              <option value="year">Сначала новые по году</option>
+              <option value="updated">Недавно обновлённые</option>
+              <option value="popularity">По популярности</option>
+              <option value="title">По алфавиту</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Кликабельная линейка годов -->
+        <div class="years-bar" id="years-bar" aria-label="Фильтр по году выхода"></div>
+      </div>
+
+      <div class="catalog-meta-bar">
+        <div class="meta-bar-left">
+          <h1 id="catalog-heading" class="catalog-section-heading">Все дорамы</h1>
+          <span id="catalog-count-label" class="meta-summary">Загрузка каталога...</span>
+          <span id="catalog-last-updated" class="meta-updated-label"></span>
+        </div>
+        <button type="button" id="btn-reset-filters" class="btn-link is-hidden">Сбросить фильтры</button>
+      </div>
+
+      <!-- Сетка карточек дорам с описаниями -->
+      <div id="dramas-grid" class="dramas-grid"></div>
+      <div id="catalog-load-more" class="load-more-wrap is-hidden">
+        <button type="button" id="btn-load-more" class="btn btn-secondary">Показать ещё</button>
+      </div>
+      <div id="catalog-empty" class="empty-state is-hidden">
+        <h3>По вашему запросу ничего не найдено</h3>
+        <p>Попробуйте выбрать другой год, жанр или смягчить поисковый запрос.</p>
+        <button type="button" id="btn-empty-reset" class="btn btn-secondary">Показать все дорамы</button>
+      </div>
+    </section>
+
+    <!-- ==================== МОИ СПИСКИ ==================== -->
+    <section id="view-lists" class="view-section" aria-labelledby="lists-heading">
+      <div class="section-header">
+        <div>
+          <h2 id="lists-heading" class="section-title">Мои списки и закладки</h2>
+          <p class="section-subtitle">
+            Отмечайте просмотренные серии, ставьте личные оценки и создавайте собственные подборки любимых дорам.
+          </p>
+        </div>
+        <form id="create-list-form" class="inline-create-form">
+          <input id="new-list-name" type="text" placeholder="Название новой подборки..." maxlength="60" required />
+          <button type="submit" class="btn btn-primary">Создать подборку</button>
+        </form>
+      </div>
+
+      <div id="lists-tabs" class="segmented-tabs" role="tablist"></div>
+      <div id="lists-content" class="lists-content"></div>
+    </section>
+  </main>
+
+  <!-- ==================== КАРТОЧКА ДОРАМЫ ==================== -->
+  <div id="drama-modal" class="modal-backdrop is-hidden" role="dialog" aria-modal="true" aria-labelledby="modal-drama-title">
+    <div class="modal-dialog modal-large">
+      <button type="button" id="btn-close-drama-modal" class="modal-close" aria-label="Закрыть карточку">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div id="drama-modal-body" class="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- ==================== ПРОФИЛЬ АКТЁРА / РЕЖИССЁРА ==================== -->
+  <div id="person-modal" class="modal-backdrop is-hidden" role="dialog" aria-modal="true" aria-labelledby="modal-person-title">
+    <div class="modal-dialog modal-medium">
+      <button type="button" id="btn-close-person-modal" class="modal-close" aria-label="Закрыть профиль">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div id="person-modal-body" class="modal-body"></div>
+    </div>
+  </div>
+
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <script type="module" src="/static/js/app.js"></script>
+</body>
+</html>
