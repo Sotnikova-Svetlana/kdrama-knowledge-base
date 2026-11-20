@@ -22,17 +22,16 @@
    python -m venv venv
    .\venv\Scripts\activate
 
-2.  Установить зависимости:
+2. Установить зависимости:
    ```bash
-    pip install -r requirements.txt
+   pip install -r requirements.txt
 
-3.  Запустить приложение:
+3. Запустить приложение:
    ```bash
-    python run.py
+   python run.py
 
-4.  Открыть в браузере: http://localhost:8000 (документация API:
-    http://localhost:8000/docs).
+4. Открыть в браузере: http://localhost:8000 (документация API: http://localhost:8000/docs).
 
 ## Тестирование
-    ```bash
-    pytest -v
+   ```bash
+   pytest -v
